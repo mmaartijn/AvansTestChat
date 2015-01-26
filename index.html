@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+  	<title>Chat rooms></title>
+  	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+  	<script src="client.js"></script>
+  </head>
+  <body>
+    <div id='currentUser'>
+      <h1>Username:</h1>
+      <input type="text" id="txtUsername" />
+    </div>
+    <div>
+      <h1>Rooms:</h1>
+      <p>Click a room to enter</p>
+      <div id="roomlist"></div>
+      <input type="text" id="txtRoomname" />
+      <button id="btnAddRoom">Add room</button>
+    </div>
+    <div id="currentRoom">
+      <h1 class="roomName"></h1>
+      <ul class="users">
+      </ul>
+      <input type="text" class="txtNewLine" /><button class="btnPostNewLine">Plaats je tekst</button>
+      <ul class="lines">
+      </ul>
+    </div>
+  </body>
+</html>
