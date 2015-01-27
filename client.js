@@ -3,7 +3,7 @@
 * Initializing
 *******************************************************
 **/
-var url = "http://127.0.0.1:8080",
+var url = "https://avanstestchat.herokuapp.com",
     currentRoomId,
     currentUsername,
     socket;
