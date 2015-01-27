@@ -8,7 +8,7 @@ var app = require('express')()
 
 var RoomDB;
 	
-server.listen(8080);
+server.listen();
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
