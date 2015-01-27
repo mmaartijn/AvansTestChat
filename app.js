@@ -2,7 +2,7 @@ var fs      = require('fs');
 var app = require('express')()
   	,server = require('http').createServer(app)
   	,io = require('socket.io').listen(server)
-  	,mongoose = require('mongoose').connect(os.getenv('MONGOLAB_URL'))
+  	,mongoose = require('mongoose').connect(process.env.MONGOLAB_URL))
   	,db = mongoose.connection
   	,currentSessions = [];
 
