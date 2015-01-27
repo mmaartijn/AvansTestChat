@@ -28,6 +28,8 @@ db.once('open', function() {
 *******************************************************
 **/
 	roomSchema.methods.addLine = function(params, callback){
+		console.log('addLine');
+
 		var socketId = params.socketId
 			,line = params.line;
 
@@ -42,6 +44,8 @@ db.once('open', function() {
 	}
 
 	roomSchema.methods.getUser = function(socketId){
+		console.log('getUser');
+
 		for (var i = this.users.length - 1; i >= 0; i--) {
 			if(this.users[i].socketId == socketId){
 				return i;
