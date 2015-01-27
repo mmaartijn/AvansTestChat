@@ -7,8 +7,9 @@ var app = require('express')()
   	,currentSessions = [];
 
 var RoomDB;
-	
-server.listen();
+
+var port = process.env.PORT || CONFIG.port;
+server.listen(port);
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
